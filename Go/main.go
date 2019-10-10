@@ -13,7 +13,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	id := 1
+	id := 3
 	var name string
 
 	if err := cnn.QueryRow("SELECT name FROM test_tb WHERE id = ? LIMIT 1", id).Scan(&name); err != nil {
