@@ -16,7 +16,7 @@ services:
     build:
       context: ./Go
     volumes:
-      - "./Go:/go"
+      - "./Go:/go/src/app"
     container_name: golang_app
     ports:
       - "8080:8080"
